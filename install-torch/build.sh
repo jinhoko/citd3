@@ -9,8 +9,6 @@ mkdir $INSTALLDIR && cd $INSTALLDIR
 git clone --recursive https://github.com/pytorch/pytorch
 git checkout $PYTORCHVER
 cd pytorch
-git submodule update --init --recursive
-
 
 export NO_CUDA=1
 export NO_DISTRIBUTED=1
